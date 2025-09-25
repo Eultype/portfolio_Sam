@@ -23,7 +23,21 @@
     color: transparent;
 }
 
+/* Curseur */
+.cursor {
+    color: white;
+    animation: blink 2s infinite;
+    margin-left: 5px;
+}
 
-
+/* Animation curseur */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
 
 /* ========================= FIN HERO ============================ */
