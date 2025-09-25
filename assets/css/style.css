@@ -86,4 +86,17 @@
     border-color: transparent;
 }
 
+/* Socials icônes */
+.rounded-circle {
+    border:1px solid hsl(217.2 32.6% 17.5%);
+    border-radius:50%;
+    width:50px;
+    height:50px;
+    background-color: hsl(217.2 32.6% 17.5%);
+}
+
+.social-icon {
+    color: hsl(198.6, 88.7%, 48.4%);
+}
+
 /* ========================= FIN HERO ============================ */

@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // Génération des icônes Lucides
+    lucide.createIcons();
+
+    // Animation du texte
     const textElement = document.querySelector('.animate-text h2');
     const texts = [
         "Développeur Web Fullstack Junior",
