@@ -15,6 +15,15 @@
     height: 100vh;
 }
 
+/* Texte */
+.gradient-nom {
+    background-image: linear-gradient(135deg, hsl(198.6, 88.7%, 48.4%), hsl(240, 100%, 70%));
+    -webkit-background-clip: text; /* Pour la compatibilité navigateur */
+    background-clip: text;
+    color: transparent;
+}
+
+
 
 
 /* ========================= FIN HERO ============================ */
