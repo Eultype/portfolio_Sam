@@ -40,4 +40,50 @@
     }
 }
 
+/* === BOUTONS === */
+/* Bouton projets */
+.btn-projets {
+    background-image: linear-gradient(135deg, hsl(198.6, 88.7%, 48.4%), hsl(240, 100%, 70%));
+    color: black;
+    padding: 15px 50px;
+    border:none;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-projets:hover {
+    box-shadow: 0 0 20px hsl(198.6, 88.7%, 48.4%);
+    scale: 1.05;
+}
+
+/* Bouton CV */
+.btn-cv {
+    position: relative;
+    overflow: hidden;
+    color: hsl(198.6, 88.7%, 48.4%);
+    padding: 10px 35px;
+    border: 1px solid hsl(198.6, 88.7%, 48.4%);
+    background-color: hsl(222.2, 84%, 4.9%);
+    transition: color 0.5s ease-in-out, border-color 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.btn-cv::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: hsl(198.6, 88.7%, 48.4%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.btn-cv:hover::before {
+    opacity: 1;
+}
+
+.btn-cv:hover {
+    color: black;
+    border-color: transparent;
+}
+
 /* ========================= FIN HERO ============================ */
