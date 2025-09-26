@@ -146,7 +146,7 @@ body {
 
 /* ======================== MES PROJETS ========================== */
 .projets {
-    background: linear-gradient(135deg, hsl(222.2, 84%, 4.9%), hsl(217.2 32.6% 17.5%));
+    background: linear-gradient(150deg, hsl(222.2, 84%, 4.9%), hsl(217.2 32.6% 20%));
 }
 
 .card {
@@ -210,6 +210,19 @@ body {
 .btn-code:hover {
     color: white;
     border: 1px solid hsl(198.6, 88.7%, 48.4%);
+}
+
+.btn-view {
+    background-color: transparent;
+    color: hsl(198.6, 88.7%, 48.4%);
+    border: 1px solid hsl(198.6, 88.7%, 48.4%);
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-view:hover {
+    background-color: hsl(198.6, 88.7%, 48.4%);
+    box-shadow: 0 0 20px hsl(198.6, 88.7%, 48.4%);
+    color: white;
 }
 
 /* ====================== FIN MES PROJETS ======================== */
