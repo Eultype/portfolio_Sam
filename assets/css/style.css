@@ -153,6 +153,24 @@ body {
     background-color: hsl(217.2 32.6% 17.5%);
     border: 1.5px solid hsl(198.6, 88.7%, 20%); !important;
     border-radius: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px hsl(198.6, 88.7%, 30%);
+    transform: translateY(-10px);
+}
+
+.card .card-header {
+    overflow: hidden;
+}
+
+.card-img-top {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1);
 }
 
 .card-body {
