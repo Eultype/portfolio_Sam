@@ -1,7 +1,9 @@
 /* ================================== CSS SAM =================================== */
 
 /* ========================= CSS GÉNÉRAL ========================= */
-
+body {
+    background: hsl(222.2 84% 5%);
+}
 
 /* ======================== FIN CSS GÉNÉRAL ====================== */
 
@@ -141,3 +143,55 @@
 }
 
 /* ========================= FIN HERO ============================ */
+
+/* ======================== MES PROJETS ========================== */
+.projets {
+    background: linear-gradient(135deg, hsl(222.2, 84%, 4.9%), hsl(217.2 32.6% 17.5%));
+}
+
+.card {
+    background-color: hsl(217.2 32.6% 17.5%);
+    border: 1.5px solid hsl(198.6, 88.7%, 20%); !important;
+    border-radius: 0;
+}
+
+.card-body {
+    background-color: transparent !important;
+}
+
+.badge-stacks {
+    color: hsl(198.6, 88.7%, 48.4%);
+    border: 1px solid hsl(198.6, 88.7%, 25%);
+    cursor: default;
+}
+
+/* === BOUTONS === */
+/* Boutons demo / code */
+.btn-demo {
+    background: hsl(198.6, 88.7%, 48.4%) !important;
+    color: black;
+    border:none;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-demo:hover {
+    box-shadow: 0 0 20px hsl(198.6, 88.7%, 48.4%);
+    color: white;
+    scale: 1.05;
+}
+
+.btn-code {
+    position: relative;
+    overflow: hidden;
+    color: hsl(198.6, 88.7%, 48.4%);
+    border: 1px solid hsl(198.6, 75%, 48.4%);
+    background-color: hsl(222.2, 84%, 4.9%);
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-code:hover {
+    color: white;
+    border: 1px solid hsl(198.6, 88.7%, 48.4%);
+}
+
+/* ====================== FIN MES PROJETS ======================== */

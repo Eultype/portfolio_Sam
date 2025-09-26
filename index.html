@@ -27,7 +27,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-xl navbar-dark mb-5">
         <div class="navbar-bg"></div>
-        <div class="container-fluid my-1 mx-5">
+        <div class="container-fluid my-1 mx-4">
             <a class="navbar-brand " href="#">
                 <img src="assets/img/logo_Sam.png" class="logo" alt="" width="90">
             </a>
@@ -70,8 +70,8 @@
         </div>
 
         <!-- Boutons Projets / CV -->
-        <div class="boutons mt-4 d-flex flex-column flex-md-row gap-3 justify-content-center">
-            <a href="#projets" class="btn btn-projets">Voir mes projets</a>
+        <div class="boutons mt-4 justify-content-center">
+            <a href="#projets" class="btn btn-projets me-3">Voir mes projets</a>
             <a href="#" class="btn btn-cv"><small>Télécharger CV</small></a>
         </div>
 
@@ -107,15 +107,50 @@
 </div>
 
 <!-- Mes projets -->
-<div class="container-fluid projets my-5">
+<div class="container-fluid projets p-5 min-vh-100 shadow-sm">
 
     <!-- Titre / Sous-titre -->
-    <div class="text-center col-12 col-lg-6 mx-auto">
-        <h1 class="display-3 fw-bold">Mes <span class="gradient-nom">Projets</span></h1>
+    <div class="text-center text-white col-12 col-lg-6 mx-auto">
+        <h1 class="display-4 fw-bold">Mes <span class="gradient-nom">Projets</span></h1>
         <p class="opacity-50 fs-5">Découvrez une sélection de mes réalisations récentes, alliant créativité technique et expérience utilisateur optimale.</p>
     </div>
 
-    
+    <!-- Carte projets -->
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-5 g-4 px-4">
+        <!-- Projet n°1 -->
+        <div class="col">
+            <!-- Card header - image -->
+            <div class="card rounded">
+                <div class="card-header p-0 border-0">
+                    <img src="assets/img/projet_scarlett.png"
+                         class="card-img-top"
+                         alt="Scarlett Gallery Portfolio"
+                         style="height:200px">
+                </div>
+                <!-- Card body - titre / description / stacks / boutons -->
+                <div class="card-body p-4 rounded-bottom">
+                    <h5 class="card-title text-white">Scarlett Gallery Portfolio</h5>
+                    <p class="card-text text-white opacity-50 small mb-3">Site vitrine complet</p>
+                    <div class="d-flex mb-4 gap-2">
+                        <span class="badge rounded-pill bg-transparent badge-stacks "><small>HTML</small></span>
+                        <span class="badge rounded-pill bg-transparent badge-stacks"><small>CSS</small></span>
+                        <span class="badge rounded-pill bg-transparent badge-stacks"><small>Bootstrap</small></span>
+                        <span class="badge rounded-pill bg-transparent badge-stacks"><small>Javascript</small></span>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center gap-2 mb-5">
+                        <a href="#" class="btn btn-demo w-50">
+                            <i data-lucide="external-link" class="fs-5"></i>
+                            <small>Démo</small>
+                        </a>
+                        <a href="#" class="btn btn-code w-50">
+                            <i data-lucide="github" class="fs-5"></i>
+                            <small>Code</small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 
