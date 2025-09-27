@@ -266,4 +266,20 @@ body {
     border: 1.5px solid hsl(198.6, 88.7%, 20%); !important;
 }
 
+.card-comp {
+    background-color: hsla(217.2, 32.6%, 17.5%, 0.50) !important;
+    border: 1.5px solid hsl(198.6, 88.7%, 20%); !important;
+}
+
+.badge-comp {
+    background-color: hsl(198.6, 88.7%, 20%);
+}
+
+.comp {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+}
+
 /* ========================= FIN ABOUT =========================== */
