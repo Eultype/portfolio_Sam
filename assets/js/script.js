@@ -2,6 +2,16 @@ document.addEventListener('DOMContentLoaded', function () {
     // Génération des icônes Lucides
     lucide.createIcons();
 
+    // Navbar scroll effect
+    const navbar = document.getElementById('mainNav');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add('navbar-scrolled');
+        } else {
+            navbar.classList.remove('navbar-scrolled');
+        }
+    });
+
     // Animation du texte
     const textElement = document.querySelector('.animate-text h2');
     const texts = [

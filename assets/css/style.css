@@ -11,7 +11,23 @@ body {
     color: hsl(198.6, 88.7%, 48.4%);
 }
 
+.bg-primary {
+    background-color: hsl(198.6, 88.7%, 48.4%) !important;
+}
+
+.text-primary {
+    color: hsl(198.6, 88.7%, 48.4%) !important;
+}
 /* ======================== FIN CSS GÉNÉRAL ====================== */
+#mainNav {
+    transition: background-color 0.5s ease-in-out;
+}
+
+.navbar-scrolled {
+    background-color: hsla(222.2, 84%, 5%, 0.8);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
 
 /* =========================== HERO ============================== */
 
@@ -161,14 +177,14 @@ body {
     background: linear-gradient(150deg, hsl(222.2, 84%, 4.9%), hsl(217.2 32.6% 20%));
 }
 
-.card {
+.card-projet {
     background-color: hsl(217.2 32.6% 17.5%);
     border: 1.5px solid hsl(198.6, 88.7%, 20%); !important;
     border-radius: 0;
     transition: all 0.3s ease-in-out;
 }
 
-.card:hover {
+.card-projet:hover {
     box-shadow: 0 0 30px hsl(198.6, 88.7%, 20%);
     transform: translateY(-10px);
 }
@@ -240,16 +256,14 @@ body {
 /* ====================== FIN MES PROJETS ======================== */
 
 /* =========================== ABOUT ============================= */
+.img-profil {
+    border : 2px solid hsl(198.6, 88.7%, 30%);
+    opacity: 0.7;
+}
 
-
+.card-profil {
+    background-color: hsla(217.2, 32.6%, 17.5%, 0.50) !important;
+    border: 1.5px solid hsl(198.6, 88.7%, 20%); !important;
+}
 
 /* ========================= FIN ABOUT =========================== */
-
-/* ========================= MEDIA QUERIES ========================= */
-@media (max-width: 992px) {
-    .hero {
-        min-height: 100vh;
-        height: auto;
-    }
-}
-/* ======================= FIN MEDIA QUERIES ======================= */

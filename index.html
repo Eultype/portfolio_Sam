@@ -25,7 +25,7 @@
 <div class="container-fluid hero">
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top px-3">
         <div class="container-fluid px-4">
             <a class="navbar-brand" href="#">
                 <img src="assets/img/logo_Sam.png" class="logo" alt="Logo Sam Darry" width="90">
@@ -105,7 +105,7 @@
 </div>
 
 <!-- Mes projets -->
-<div class="container-fluid projets py-5 px-5 shadow-sm" id="projets">
+<div class="container-fluid projets py-5 px-5" id="projets">
 
     <!-- Titre / Sous-titre -->
     <div class="text-center text-white mt-3">
@@ -114,11 +114,11 @@
     </div>
 
     <!-- Carte projets -->
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-5 gap-3">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 mt-5 g-3">
         <!-- Projet n°1 -->
         <div class="col">
             <!-- Card header - image -->
-            <div class="card rounded">
+            <div class="card rounded card-projet">
                 <div class="card-header p-0 border-0">
                     <img src="assets/img/projet_scarlett.png"
                          class="card-img-top hover-zoom"
@@ -151,7 +151,7 @@
         <!-- Projet n°2 -->
         <div class="col">
             <!-- Card header - image -->
-            <div class="card rounded">
+            <div class="card rounded card-projet">
                 <div class="card-header p-0 border-0">
                     <img src="assets/img/projet_cooklanders.png"
                          class="card-img-top"
@@ -200,11 +200,11 @@
     <div class="row">
         <!-- Profil -->
         <div class="col-sm-12 col-lg-6">
-            <div class="card bg-transparent border-0">
+            <div class="card bg-transparent">
                 <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start text-center text-lg-start gap-4">
                     <!-- Colonne Image -->
                     <div>
-                        <img class="rounded-3"
+                        <img class="rounded-3 img-profil"
                              src="assets/img/Profil.jpeg"
                              alt="Profil"
                              style="width: 200px; height: 200px; object-fit: cover;">
@@ -230,35 +230,35 @@
                     </div>
                 </div>
             </div>
-            <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4 g-4 mt-5">
+            <div class="row row-cols-2 row-cols-md-1 row-cols-lg-2 row-cols-xl-4 g-4 mt-3">
                 <div class="col">
-                    <div class="card h-100 rounded">
+                    <div class="card h-100 rounded card-profil">
                         <div class="card-body text-white text-center">
-                            <h3 class="card-title gradient-nom">12+</h3>
-                            <p class="card-text opacity-75"><small>Mois de formation intensive</small></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 rounded">
-                        <div class="card-body text-white text-center">
-                            <h3 class="card-title gradient-nom">+10</h3>
+                            <h3 class="card-title text-primary">10+</h3>
                             <p class="card-text opacity-75"><small>Projets réalisés</small></p>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100 rounded">
+                    <div class="card h-100 rounded card-profil">
                         <div class="card-body text-white text-center">
-                            <h3 class="card-title gradient-nom">+15</h3>
+                            <h3 class="card-title text-primary">12+</h3>
+                            <p class="card-text opacity-75"><small>Mois de formation intensive</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 rounded card-profil">
+                        <div class="card-body text-white text-center">
+                            <h3 class="card-title text-primary">15+</h3>
                             <p class="card-text opacity-75"><small>Technologies et outils utilisés</small></p>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100 rounded">
+                    <div class="card h-100 rounded card-profil">
                         <div class="card-body text-white text-center">
-                            <h3 class="card-title gradient-nom">Objectif:</h3>
+                            <h3 class="card-title text-primary">Objectif :</h3>
                             <p class="card-text opacity-75"><small>Devenir développeur web professionnel</small></p>
                         </div>
                     </div>
