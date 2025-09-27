@@ -5,6 +5,12 @@ body {
     background: hsl(222.2 84% 5%);
 }
 
+.icon-sm {
+    width: 16px;
+    height: 16px;
+    color: hsl(198.6, 88.7%, 48.4%);
+}
+
 /* ======================== FIN CSS GÉNÉRAL ====================== */
 
 /* =========================== HERO ============================== */
@@ -15,6 +21,15 @@ body {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-content-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* Texte */
@@ -103,9 +118,6 @@ body {
 
 /* Animation scroll down */
 .scroll-down-indicator {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     z-index: 10;
 }
 
@@ -157,7 +169,7 @@ body {
 }
 
 .card:hover {
-    box-shadow: 0 0 20px hsl(198.6, 88.7%, 30%);
+    box-shadow: 0 0 30px hsl(198.6, 88.7%, 20%);
     transform: translateY(-10px);
 }
 
@@ -226,3 +238,18 @@ body {
 }
 
 /* ====================== FIN MES PROJETS ======================== */
+
+/* =========================== ABOUT ============================= */
+
+
+
+/* ========================= FIN ABOUT =========================== */
+
+/* ========================= MEDIA QUERIES ========================= */
+@media (max-width: 992px) {
+    .hero {
+        min-height: 100vh;
+        height: auto;
+    }
+}
+/* ======================= FIN MEDIA QUERIES ======================= */
