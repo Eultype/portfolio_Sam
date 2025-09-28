@@ -508,6 +508,7 @@ h1, h2, h3, h4, h5, h6 {
 .form-control {
     background-color: hsl(220, 46%, 10%);
     border: 1px solid var(--primary-dark); !important;
+    color: white;
 }
 
 .form-control:focus {
@@ -515,6 +516,7 @@ h1, h2, h3, h4, h5, h6 {
     border: 2px solid var(--primary-dark);
     outline: 2px solid var(--primary);
     outline-offset: 2px;
+    color: white;
 }
 
 .form-control::placeholder {

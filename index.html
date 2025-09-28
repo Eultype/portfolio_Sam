@@ -441,29 +441,31 @@
         <div class="col-sm-12 col-lg-6">
             <div class="card card-contact rounded mb-lg-0 mb-4">
                 <div class="card-body p-4">
-                    <form action="">
-                        <p class="text-white mb-4 fs-4 fw-bold"><i data-lucide="send" class="me-2 icon-contact"></i>Envoyez-moi un message</p>
+                    <form id="contact-form">
+                        <p class="text-white mb-4 fs-4 fw-bold">
+                            <i data-lucide="send" class="me-2 icon-contact"></i>Envoyez-moi un message
+                        </p>
                         <div class="row g-3 mb-2">
                             <div class="col">
                                 <div class="mb-3">
                                     <label for="nom" class="form-label text-white">Nom complet</label>
-                                    <input type="text" class="form-control" id="nom" placeholder="Votre nom">
+                                    <input type="text" class="form-control" id="nom" name="name" placeholder="Votre nom">
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="mb-3">
                                     <label for="email" class="form-label text-white">Email</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Votre email@mail.com">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Votre email@mail.com">
                                 </div>
                             </div>
                         </div>
                         <div class="mb-4">
                             <label for="sujet" class="form-label text-white">Sujet</label>
-                            <input type="text" class="form-control" id="sujet" placeholder="Sujet de votre message">
+                            <input type="text" class="form-control" id="sujet" name="subject" placeholder="Sujet de votre message">
                         </div>
                         <div class="mb-3">
                             <label for="message" class="form-label text-white">Message</label>
-                            <textarea class="form-control" id="message" rows="5" placeholder="Décrivez votre projet ou votre question"></textarea>
+                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Décrivez votre projet ou votre question"></textarea>
                         </div>
                         <div class="mb-3">
                             <button type="submit" class="btn btn-projets w-100">
@@ -601,5 +603,9 @@
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <script src="assets/js/script.js"></script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    emailjs.init('KVO2nCs2DD5OtEr1E');
+</script>
 </body>
 </html>
