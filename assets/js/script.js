@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         if (!hasError) {
-            emailjs.sendForm('service_1xc9g9p', 'template_3yyt6ks', form, 'KVO2nCs2DD5OtEr1E')
+            emailjs.sendForm('service_1xc9g9p', 'template_3yyt6ks', form)
                 .then(() => {
                     showBootstrapAlert("Formulaire envoyé avec succès !", "success");
                     form.reset();
