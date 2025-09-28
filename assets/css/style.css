@@ -50,6 +50,31 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 1px solid hsl(198.6, 88.7%, 10%);
 }
 
+.nav-link {
+    position: relative;
+    color: grey;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 0;
+    background-color: var(--primary);
+    transition: width 0.3s ease;
+}
+
+.nav-link.active {
+    color: var(--primary) !important;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
 /* Background image */
 .hero {
     background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9)), url(../img/hero-bg.jpg);
@@ -387,6 +412,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(50px);
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
+
 .timeline-item.is-visible {
     opacity: 1;
     transform: translateY(0);
@@ -397,11 +423,12 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     width: 45%;
     background-color: hsl(217.2 32.6% 17.5%);
-    border: 1.5px solid var(--primary-dark); !important;
+    border: 1px solid var(--primary-dark); !important;
 }
 .timeline-item.left .timeline-content {
     margin-right: auto;
 }
+
 .timeline-item.right .timeline-content {
     margin-left: auto;
 }
@@ -410,14 +437,30 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     width: 20px;
     height: 20px;
     border-radius: 50%;
     background: linear-gradient(135deg, var(--primary), hsl(240, 100%, 70%));
-    border: 3px solid #fff;
+    border: 3px solid black;
     z-index: 1;
+    animation: pulse-timeline 1.5s infinite;
 }
+
+@keyframes pulse-timeline {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.3);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
+
 @media (max-width: 768px) {
     .timeline::before {
         left: 20px;
@@ -469,9 +512,34 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
     opacity: 0.50;
 }
+
+.card-info {
+    background-color: hsla(217.2, 32.6%, 17.5%, 0.50) !important;
+    border: 1px solid var(--primary-dark); !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-info:hover {
+    border: 1px solid var(--primary); !important;
+    transform: scale(1.05);
+}
+
 .bg-icon-social {
     background-color: hsl(217.2 32.6% 17.5%);
-    border: 1px solid var(--primary-dark); !important;
+    border: 1px solid var(--primary-dark) !important;
+    transition: all 0.5s ease-in-out;
+    color: grey !important;
+}
+
+.bg-icon-social a,
+.bg-icon-social i {
+    color: inherit;
+}
+
+.bg-icon-social:hover {
+    background-color: hsl(217.2 32.6% 25%);
+    transform: scale(1.10);
+    color: var(--primary) !important;
 }
 
 .dispo-pulse {
@@ -495,16 +563,23 @@ h1, h2, h3, h4, h5, h6 {
         opacity: 1;
     }
 }
+
 /* ======================== FIN CONTACT ========================== */
 
 /* =========================== FOOTER ============================ */
 .bg-icon-footer {
     background-color: hsl(220, 46%, 10%) !important;
-    border: 1px solid var(--primary-dark); !important;
+    border: 1px solid var(--primary-dark) !important;
     height: 30px;
     width: 30px;
     padding: 18px;
     transition: all 0.5s ease-in-out;
+    color: grey;
+}
+
+.bg-icon-footer a,
+.bg-icon-footer i {
+    color: inherit;
 }
 
 .bg-icon-footer:hover {
@@ -512,9 +587,15 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary);
 }
 
-.icon-footer {
+.footer-nav a {
     color: grey;
-    height: 18px;
-    width: 18px;
+    display: inline-block;
+    transition: all 0.3s ease, color 0.3s ease;
 }
+
+.footer-nav a:hover {
+    transform: translateX(6px);
+    color: var(--primary);
+}
+
 /* ========================= FIN FOOTER ========================== */

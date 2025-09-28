@@ -19,10 +19,10 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="100" tabindex="0">
 
 <!-- Hero -->
-<div class="container-fluid hero">
+<div class="container-fluid hero" id="accueil">
 
     <!-- Navbar -->
     <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top px-lg-3">
@@ -37,16 +37,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto text-center gap-5">
                     <li class="nav-item">
-                        <a class="nav-link text-white opacity-50" href="#">Accueil</a>
+                        <a class="nav-link nav-underline active" href="#accueil">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white opacity-50" href="#projets">Projets</a>
+                        <a class="nav-link nav-underline" href="#projets">Projets</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white opacity-50" href="#about">À propos</a>
+                        <a class="nav-link nav-underline" href="#about">À propos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white opacity-50" href="#contact">Contact</a>
+                        <a class="nav-link nav-underline" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -352,10 +352,10 @@
             </div>
         </div>
     </div>
-</div>
 
-<!-- Timeline -->
-<div class="container">
+
+    <!-- Timeline -->
+    <div class="container">
 
     <!-- Titre / Sous-titre -->
     <div class="text-center text-white mt-3 mb-5">
@@ -418,6 +418,7 @@
             </div>
         </div>
     </div>
+    </div>
 </div>
 
 <!-- Contact -->
@@ -474,7 +475,7 @@
                 <p class="text-white mb-4 fs-4 fw-bold">Information de contact</p>
             </div>
             <!-- Carte email -->
-            <div class="rounded p-3 mb-4 card-comp d-flex align-items-center gap-3">
+            <div class="rounded p-3 mb-4 card-info d-flex align-items-center gap-3">
                 <div class="p-3 rounded d-inline-flex align-items-center justify-content-center bg-icon-contact">
                     <i data-lucide="mail" class="text-primary"></i>
                 </div>
@@ -484,7 +485,7 @@
                 </div>
             </div>
             <!-- Carte téléphone -->
-            <div class="rounded p-3 mb-4 card-comp d-flex align-items-center gap-3">
+            <div class="rounded p-3 mb-4 card-info d-flex align-items-center gap-3">
                 <div class="p-3 rounded d-inline-flex align-items-center justify-content-center bg-icon-contact">
                     <i data-lucide="phone" class="text-primary"></i>
                 </div>
@@ -494,7 +495,7 @@
                 </div>
             </div>
             <!-- Carte localisation -->
-            <div class="rounded p-3 mb-4 card-comp d-flex align-items-center gap-3">
+            <div class="rounded p-3 mb-4 card-info d-flex align-items-center gap-3">
                 <div class="p-3 rounded d-inline-flex align-items-center justify-content-center bg-icon-contact">
                     <i data-lucide="map-pin" class="text-primary"></i>
                 </div>
@@ -508,18 +509,18 @@
             </div>
             <div class="d-flex gap-4 mb-4">
                 <div class="p-3 rounded d-inline-flex align-items-center justify-content-center bg-icon-social">
-                    <a href="https://www.linkedin.com/in/samu%C3%ABl-darry-00000012a/" target="_blank" class="text-white">
-                        <i data-lucide="github" class="icon-contact"></i>
+                    <a href="https://www.linkedin.com/in/samu%C3%ABl-darry-00000012a/" target="_blank">
+                        <i data-lucide="github" class="icon-social"></i>
                     </a>
                 </div>
                 <div class="p-3 rounded d-inline-flex align-items-center justify-content-center bg-icon-social">
-                    <a href="https://www.linkedin.com/in/samu%C3%ABl-darry-00000012a/" target="_blank" class="text-white">
-                        <i data-lucide="linkedin" class="icon-contact"></i>
+                    <a href="https://www.linkedin.com/in/samu%C3%ABl-darry-00000012a/" target="_blank">
+                        <i data-lucide="linkedin" class="icon-social"></i>
                     </a>
                 </div>
                 <div class="p-3 rounded d-inline-flex align-items-center justify-content-center bg-icon-social">
-                    <a href="https://www.linkedin.com/in/samu%C3%ABl-darry-00000012a/" target="_blank" class="text-white">
-                        <i data-lucide="twitter" class="icon-contact"></i>
+                    <a href="https://www.linkedin.com/in/samu%C3%ABl-darry-00000012a/" target="_blank">
+                        <i data-lucide="twitter" class="icon-social"></i>
                     </a>
                 </div>
             </div>
@@ -546,17 +547,17 @@
                 <p class="opacity-75 mb-4">Développeur web fullstack passionné, créant des expériences web modernes et performantes.</p>
                 <div class="d-flex justify-content-center justify-content-lg-start gap-3">
                     <div class="rounded d-inline-flex align-items-center justify-content-center bg-icon-footer">
-                        <a href="https://github.com" target="_blank" class="text-white" aria-label="GitHub">
+                        <a href="https://github.com" target="_blank" aria-label="GitHub">
                             <i data-lucide="github" class="icon-footer"></i>
                         </a>
                     </div>
                     <div class="rounded d-inline-flex align-items-center justify-content-center bg-icon-footer">
-                        <a href="https://linkedin.com" target="_blank" class="text-white" aria-label="LinkedIn">
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
                             <i data-lucide="linkedin" class="icon-footer"></i>
                         </a>
                     </div>
                     <div class="rounded d-inline-flex align-items-center justify-content-center bg-icon-footer">
-                        <a href="mailto:Sdarryy59@gmail.com" target="_blank" class="text-white" aria-label="Email">
+                        <a href="mailto:Sdarryy59@gmail.com" target="_blank" aria-label="Email">
                             <i data-lucide="mail" class="icon-footer"></i>
                         </a>
                     </div>
@@ -566,11 +567,11 @@
             <!-- Navigation -->
             <div class="col-12 col-md-4 mb-4 mb-md-0 mb-3 d-flex flex-column align-items-center">
                 <h5>Navigation</h5>
-                <div class="d-flex flex-column gap-2 mt-2">
-                    <a href="#" class="text-decoration-none text-secondary">Accueil</a>
-                    <a href="#projets" class="text-decoration-none text-secondary">Projets</a>
-                    <a href="#about" class="text-decoration-none text-secondary">À propos</a>
-                    <a href="#contact" class="text-decoration-none text-secondary">Contact</a>
+                <div class="d-flex flex-column gap-2 mt-2 footer-nav">
+                    <a href="#accueil" class="text-decoration-none">Accueil</a>
+                    <a href="#projets" class="text-decoration-none">Projets</a>
+                    <a href="#about" class="text-decoration-none">À propos</a>
+                    <a href="#contact" class="text-decoration-none">Contact</a>
                 </div>
             </div>
 
