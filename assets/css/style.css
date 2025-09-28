@@ -1,26 +1,39 @@
 /* ================================== CSS SAM =================================== */
 
 /* ========================= CSS GÉNÉRAL ========================= */
+:root {
+    --primary: hsl(198.6, 88.7%, 48.4%);
+    --primary-dark: hsl(198.6, 88.7%, 20%);
+    --bg-dark: hsl(222.2 84% 5%);
+    --success: hsl(140, 90%, 45%);
+}
+
 body {
-    background: hsl(222.2 84% 5%);
+    background: var(--bg-dark);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Font */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
 }
 
 .icon-sm {
     width: 16px;
     height: 16px;
-    color: hsl(198.6, 88.7%, 48.4%);
+    color: var(--primary);
 }
 
 .bg-primary {
-    background-color: hsl(198.6, 88.7%, 48.4%) !important;
+    background-color: var(--primary) !important;
 }
 
 .text-primary {
-    color: hsl(198.6, 88.7%, 48.4%) !important;
+    color: var(--primary) !important;
 }
 
 .text-success {
-    color: hsl(140, 90%, 45%) !important
+    color: var(--success) !important
 }
 /* ======================== FIN CSS GÉNÉRAL ====================== */
 
@@ -56,7 +69,7 @@ body {
 
 /* Texte */
 .gradient-nom {
-    background-image: linear-gradient(135deg, hsl(198.6, 88.7%, 48.4%), hsl(240, 100%, 70%));
+    background-image: linear-gradient(135deg, var(--primary), hsl(240, 100%, 70%));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -82,7 +95,7 @@ body {
 /* === BOUTONS === */
 /* Bouton projets */
 .btn-projets {
-    background-image: linear-gradient(135deg, hsl(198.6, 88.7%, 48.4%), hsl(240, 100%, 70%));
+    background-image: linear-gradient(135deg, var(--primary), hsl(240, 100%, 70%));
     color: black;
     padding: 15px 50px;
     border:none;
@@ -90,7 +103,7 @@ body {
 }
 
 .btn-projets:hover {
-    box-shadow: 0 0 20px hsl(198.6, 88.7%, 48.4%);
+    box-shadow: 0 0 20px var(--primary);
     scale: 1.05;
 }
 
@@ -98,9 +111,9 @@ body {
 .btn-cv {
     position: relative;
     overflow: hidden;
-    color: hsl(198.6, 88.7%, 48.4%);
+    color: var(--primary);
     padding: 10px 35px;
-    border: 1px solid hsl(198.6, 88.7%, 48.4%);
+    border: 1px solid var(--primary);
     background-color: hsl(222.2, 84%, 4.9%);
     transition: color 0.5s ease-in-out, border-color 0.5s ease-in-out;
     z-index: 1;
@@ -110,7 +123,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background-color: hsl(198.6, 88.7%, 48.4%);
+    background-color: var(--primary);
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     z-index: -1;
@@ -135,7 +148,7 @@ body {
 }
 
 .social-icon {
-    color: hsl(198.6, 88.7%, 48.4%);
+    color: var(--primary);
 }
 
 /* Animation scroll down */
@@ -179,20 +192,22 @@ body {
 /* ========================= FIN HERO ============================ */
 
 /* ======================== MES PROJETS ========================== */
+/* Background */
 .projets,
 .contact {
     background: linear-gradient(150deg, hsl(222.2, 84%, 4.9%), hsl(217.2 32.6% 20%));
 }
 
+/* Carte projet */
 .card-projet {
     background-color: hsl(217.2 32.6% 17.5%);
-    border: 1.5px solid hsl(198.6, 88.7%, 20%); !important;
+    border: 1.5px solid var(--primary-dark); !important;
     border-radius: 0;
     transition: all 0.3s ease-in-out;
 }
 
 .card-projet:hover {
-    box-shadow: 0 0 30px hsl(198.6, 88.7%, 20%);
+    box-shadow: 0 0 30px var(--primary-dark);
     transform: translateY(-10px);
 }
 
@@ -212,22 +227,39 @@ body {
     background-color: transparent !important;
 }
 
+/* Badges stacks */
 .badge-stacks {
-    color: hsl(198.6, 88.7%, 48.4%);
+    color: var(--primary);
     border: 1px solid hsl(198.6, 88.7%, 25%);
+}
+
+.badge-stacks:hover {
+    background-color: hsl(217.2, 32.6%, 17.5%) !important;
+    border: 1px solid hsl(198.6, 88.7%, 30%);
+}
+
+.badge-stacks2 {
+    background-color: hsl(198.6, 88.7%, 13%, 0.8) !important;
+    color: var(--primary);
+    border: 1px solid hsl(198.6, 88.7%, 25%);
+}
+
+.badge-stacks2:hover {
+    background-color: hsl(198.6, 88.7%, 30%, 0.5) !important;
+    border: 1px solid hsl(198.6, 88.7%, 30%);
 }
 
 /* === BOUTONS === */
 /* Boutons demo / code */
 .btn-demo {
-    background: hsl(198.6, 88.7%, 48.4%) !important;
+    background: var(--primary) !important;
     color: black;
     border:none;
     transition: all 0.5s ease-in-out;
 }
 
 .btn-demo:hover {
-    box-shadow: 0 0 20px hsl(198.6, 88.7%, 48.4%);
+    box-shadow: 0 0 20px var(--primary);
     color: white;
     scale: 1.05;
 }
@@ -235,7 +267,7 @@ body {
 .btn-code {
     position: relative;
     overflow: hidden;
-    color: hsl(198.6, 88.7%, 48.4%);
+    color: var(--primary);
     border: 1px solid hsl(198.6, 75%, 48.4%);
     background-color: hsl(222.2, 84%, 4.9%);
     transition: all 0.5s ease-in-out;
@@ -243,19 +275,19 @@ body {
 
 .btn-code:hover {
     color: white;
-    border: 1px solid hsl(198.6, 88.7%, 48.4%);
+    border: 1px solid var(--primary);
 }
 
 .btn-view {
     background-color: transparent;
-    color: hsl(198.6, 88.7%, 48.4%);
-    border: 1px solid hsl(198.6, 88.7%, 48.4%);
+    color: var(--primary);
+    border: 1px solid var(--primary);
     transition: all 0.5s ease-in-out;
 }
 
 .btn-view:hover {
-    background-color: hsl(198.6, 88.7%, 48.4%);
-    box-shadow: 0 0 20px hsl(198.6, 88.7%, 48.4%);
+    background-color: var(--primary);
+    box-shadow: 0 0 20px var(--primary);
     color: white;
 }
 
@@ -271,24 +303,33 @@ body {
 /* Card profile */
 .card-profil {
     background-color: hsla(217.2, 32.6%, 17.5%, 0.50) !important;
-    border: 1.5px solid hsl(198.6, 88.7%, 10%); !important;
+    border: 1px solid hsl(198.6, 88.7%, 15%); !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-profil:hover {
+    border: 1px solid var(--primary-dark); !important;
 }
 
 /* Card compétences */
 .card-comp {
     background-color: hsla(217.2, 32.6%, 17.5%, 0.50) !important;
-    border: 1px solid hsl(198.6, 88.7%, 20%); !important;
+    border: 1px solid var(--primary-dark); !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-comp:hover {
+    border: 1px solid hsl(198.6, 88.7%, 30%); !important;
 }
 
 .comp {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-
 }
 
 .badge-comp {
-    background-color: hsl(198.6, 88.7%, 20%);
+    background-color: var(--primary-dark);
 }
 
 /* Icone profile */
@@ -302,7 +343,7 @@ body {
     right: -1rem;
     width: 3rem;
     height: 3rem;
-    background-color: hsl(198.6, 88.7%, 48.4%);
+    background-color: var(--primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -316,10 +357,10 @@ body {
 
 @keyframes pulse-glow {
     0%, 100% {
-        box-shadow: 0 0 1rem hsl(198.6, 88.7%, 48.4%);
+        box-shadow: 0 0 1rem var(--primary);
     }
     50% {
-        box-shadow: 0 0 1.5rem hsl(198.6, 88.7%, 48.4%);
+        box-shadow: 0 0 1.5rem var(--primary);
     }
 }
 
@@ -336,7 +377,7 @@ body {
     bottom: 0;
     left: 50%;
     width: 4px;
-    background: linear-gradient(135deg, hsl(198.6, 88.7%, 48.4%), hsl(240, 100%, 70%));
+    background: linear-gradient(135deg, var(--primary), hsl(240, 100%, 70%));
     transform: translateX(-50%);
 }
 .timeline-item {
@@ -356,7 +397,7 @@ body {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     width: 45%;
     background-color: hsl(217.2 32.6% 17.5%);
-    border: 1.5px solid hsl(198.6, 88.7%, 20%); !important;
+    border: 1.5px solid var(--primary-dark); !important;
 }
 .timeline-item.left .timeline-content {
     margin-right: auto;
@@ -373,7 +414,7 @@ body {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: linear-gradient(135deg, hsl(198.6, 88.7%, 48.4%), hsl(240, 100%, 70%));
+    background: linear-gradient(135deg, var(--primary), hsl(240, 100%, 70%));
     border: 3px solid #fff;
     z-index: 1;
 }
@@ -402,11 +443,11 @@ body {
 /* ========================== CONTACT ============================ */
 .card-contact {
     background-color: hsl(217.2 32.6% 17.5%);
-    border: 1px solid hsl(198.6, 88.7%, 20%); !important;
+    border: 1px solid var(--primary-dark); !important;
 }
 
 .icon-contact {
-    color: hsl(198.6, 88.7%, 48.4%);
+    color: var(--primary);
 }
 
 .bg-icon-contact {
@@ -415,13 +456,13 @@ body {
 
 .form-control {
     background-color: hsl(220, 46%, 10%);
-    border: 1px solid hsl(198.6, 88.7%, 20%); !important;
+    border: 1px solid var(--primary-dark); !important;
 }
 
 .form-control:focus {
     background-color: hsl(220, 46%, 10%);
-    border: 1px solid hsl(198.6, 88.7%, 20%); !important;
-    box-shadow: 0 0 20px hsl(198.6, 88.7%, 20%);
+    border: 1px solid var(--primary-dark); !important;
+    box-shadow: 0 0 20px var(--primary-dark);
 }
 
 .form-control::placeholder {
@@ -430,13 +471,13 @@ body {
 }
 .bg-icon-social {
     background-color: hsl(217.2 32.6% 17.5%);
-    border: 1px solid hsl(198.6, 88.7%, 20%); !important;
+    border: 1px solid var(--primary-dark); !important;
 }
 
 .dispo-pulse {
     width:12px;
     height:12px;
-    background-color: hsl(140, 90%, 45%) !important;
+    background-color: var(--success) !important;
     animation: pulse 1.5s infinite;
 }
 
@@ -455,3 +496,25 @@ body {
     }
 }
 /* ======================== FIN CONTACT ========================== */
+
+/* =========================== FOOTER ============================ */
+.bg-icon-footer {
+    background-color: hsl(220, 46%, 10%) !important;
+    border: 1px solid var(--primary-dark); !important;
+    height: 30px;
+    width: 30px;
+    padding: 18px;
+    transition: all 0.5s ease-in-out;
+}
+
+.bg-icon-footer:hover {
+    transform: scale(1.10);
+    color: var(--primary);
+}
+
+.icon-footer {
+    color: grey;
+    height: 18px;
+    width: 18px;
+}
+/* ========================= FIN FOOTER ========================== */
