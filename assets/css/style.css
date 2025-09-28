@@ -130,6 +130,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-projets:hover {
     box-shadow: 0 0 20px var(--primary);
     scale: 1.05;
+    color:black;
 }
 
 /* Bouton CV */
@@ -321,8 +322,47 @@ h1, h2, h3, h4, h5, h6 {
 /* =========================== ABOUT ============================= */
 /* Image profile */
 .img-profil {
-    border : 2px solid hsl(198.6, 88.7%, 30%);
     opacity: 0.7;
+    border-radius: 0.4rem;
+}
+
+.profile-image-container {
+    position: relative;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    border: 1px solid var(--primary-dark);
+}
+
+.profile-image-container:hover {
+    transform: scale(1.05);
+    border: 1px solid var(--primary);
+}
+
+/* Icône profile */
+.profile-icon-overlay {
+    position: absolute;
+    bottom: -1rem;
+    right: -1rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse-glow 2s infinite;
+}
+
+.profile-icon-overlay svg {
+    color: black;
+}
+
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 0 1rem var(--primary);
+    }
+    50% {
+        box-shadow: 0 0 1.5rem var(--primary);
+    }
 }
 
 /* Card profile */
@@ -355,38 +395,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .badge-comp {
     background-color: var(--primary-dark);
-}
-
-/* Icone profile */
-.profile-image-container {
-    position: relative;
-}
-
-.profile-icon-overlay {
-    position: absolute;
-    bottom: -1rem;
-    right: -1rem;
-    width: 3rem;
-    height: 3rem;
-    background-color: var(--primary);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: pulse-glow 2s infinite;
-}
-
-.profile-icon-overlay svg {
-    color: black;
-}
-
-@keyframes pulse-glow {
-    0%, 100% {
-        box-shadow: 0 0 1rem var(--primary);
-    }
-    50% {
-        box-shadow: 0 0 1.5rem var(--primary);
-    }
 }
 
 /* Timeline */
@@ -504,8 +512,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .form-control:focus {
     background-color: hsl(220, 46%, 10%);
-    border: 1px solid var(--primary-dark); !important;
-    box-shadow: 0 0 20px var(--primary-dark);
+    border: 2px solid var(--primary-dark);
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
 }
 
 .form-control::placeholder {
@@ -568,24 +577,28 @@ h1, h2, h3, h4, h5, h6 {
 
 /* =========================== FOOTER ============================ */
 .bg-icon-footer {
-    background-color: hsl(220, 46%, 10%) !important;
-    border: 1px solid var(--primary-dark) !important;
-    height: 30px;
-    width: 30px;
-    padding: 18px;
-    transition: all 0.5s ease-in-out;
+    background-color: hsl(220, 46%, 10%);
+    border: 1px solid var(--primary-dark);
+    height: 50px;
+    width: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
     color: grey;
+    border-radius: 8px;
 }
 
-.bg-icon-footer a,
 .bg-icon-footer i {
+    font-size: 20px;
     color: inherit;
 }
 
 .bg-icon-footer:hover {
-    transform: scale(1.10);
+    transform: scale(1.1);
     color: var(--primary);
 }
+
 
 .footer-nav a {
     color: grey;
