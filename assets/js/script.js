@@ -70,4 +70,9 @@ document.addEventListener('DOMContentLoaded', function () {
     timelineItems.forEach(item => {
         observer.observe(item);
     });
+
+    const body = document.body;
+    if (window.innerWidth < 768) { // tablette / mobile
+        body.setAttribute("data-bs-offset", "60"); // offset réduit
+    }
 });
