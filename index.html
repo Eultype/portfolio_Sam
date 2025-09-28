@@ -603,7 +603,7 @@
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <script type="module">
-    import emailjs from "https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js";
+    import * as emailjs from "https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js";
 
     // Initialise EmailJS
     emailjs.init('KVO2nCs2DD5OtEr1E');
@@ -611,6 +611,7 @@
     // Expose emailjs globalement pour ton script principal
     window.emailjs = emailjs;
 </script>
+
 <script src="assets/js/script.js"></script>
 </body>
 </html>
