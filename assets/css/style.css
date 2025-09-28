@@ -19,6 +19,9 @@ body {
     color: hsl(198.6, 88.7%, 48.4%) !important;
 }
 /* ======================== FIN CSS GÉNÉRAL ====================== */
+
+/* =========================== HERO ============================== */
+/* Navbar */
 #mainNav {
     transition: background-color 0.5s ease-in-out;
 }
@@ -27,9 +30,8 @@ body {
     background-color: hsla(222.2, 84%, 5%, 0.8);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
+    border-bottom: 1px solid hsl(198.6, 88.7%, 10%);
 }
-
-/* =========================== HERO ============================== */
 
 /* Background image */
 .hero {
@@ -208,7 +210,6 @@ body {
 .badge-stacks {
     color: hsl(198.6, 88.7%, 48.4%);
     border: 1px solid hsl(198.6, 88.7%, 25%);
-    cursor: default;
 }
 
 /* === BOUTONS === */
@@ -265,13 +266,13 @@ body {
 /* Card profile */
 .card-profil {
     background-color: hsla(217.2, 32.6%, 17.5%, 0.50) !important;
-    border: 1.5px solid hsl(198.6, 88.7%, 20%); !important;
+    border: 1.5px solid hsl(198.6, 88.7%, 10%); !important;
 }
 
 /* Card compétences */
 .card-comp {
     background-color: hsla(217.2, 32.6%, 17.5%, 0.50) !important;
-    border: 1.5px solid hsl(198.6, 88.7%, 20%); !important;
+    border: 1px solid hsl(198.6, 88.7%, 20%); !important;
 }
 
 .comp {
@@ -317,3 +318,76 @@ body {
     }
 }
 /* ========================= FIN ABOUT =========================== */
+
+.timeline {
+    position: relative;
+    margin: 2rem 0;
+    padding: 2rem 0;
+}
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background: linear-gradient(135deg, hsl(198.6, 88.7%, 48.4%), hsl(240, 100%, 70%));
+    transform: translateX(-50%);
+}
+.timeline-item {
+    position: relative;
+    margin: 2rem 0;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.timeline-item.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.timeline-item .timeline-content {
+    position: relative;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 45%;
+    background-color: hsl(217.2 32.6% 17.5%);
+    border: 1.5px solid hsl(198.6, 88.7%, 20%); !important;
+}
+.timeline-item.left .timeline-content {
+    margin-right: auto;
+}
+.timeline-item.right .timeline-content {
+    margin-left: auto;
+}
+.timeline-item::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, hsl(198.6, 88.7%, 48.4%), hsl(240, 100%, 70%));
+    border: 3px solid #fff;
+    z-index: 1;
+}
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 20px;
+        transform: translateX(-50%);
+    }
+    .timeline-item .timeline-content {
+        width: calc(100% - 50px);
+        margin: 0 0 1rem 50px;
+    }
+    .timeline-item.left .timeline-content,
+    .timeline-item.right .timeline-content {
+        margin-left: 50px;
+        width: calc(100% - 50px);
+    }
+    .timeline-item::after {
+        left: 20px;
+        transform: translateX(-50%);
+    }
+}

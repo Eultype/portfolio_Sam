@@ -53,4 +53,21 @@ document.addEventListener('DOMContentLoaded', function () {
         setTimeout(type, typeSpeed);
     }
     type();
+
+    // Animation de la timeline
+    const timelineItems = document.querySelectorAll('.timeline-item');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    timelineItems.forEach(item => {
+        observer.observe(item);
+    });
 });

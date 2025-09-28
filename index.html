@@ -25,7 +25,7 @@
 <div class="container-fluid hero">
 
     <!-- Navbar -->
-    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top px-3">
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top px-lg-3">
         <div class="container-fluid px-4">
             <a class="navbar-brand" href="#">
                 <img src="assets/img/logo_Sam.png" class="logo" alt="Logo Sam Darry" width="90">
@@ -105,7 +105,7 @@
 </div>
 
 <!-- Mes projets -->
-<div class="container-fluid projets py-5 px-5" id="projets">
+<div class="container-fluid projets py-5 px-3 px-lg-5" id="projets">
 
     <!-- Titre / Sous-titre -->
     <div class="text-center text-white mt-3">
@@ -114,7 +114,7 @@
     </div>
 
     <!-- Carte projets -->
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 mt-5 g-3">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 mt-5 g-3 g-lg-4">
         <!-- Projet n°1 -->
         <div class="col">
             <!-- Card header - image -->
@@ -135,7 +135,7 @@
                         <span class="badge rounded-pill bg-transparent badge-stacks"><small>Bootstrap</small></span>
                         <span class="badge rounded-pill bg-transparent badge-stacks"><small>Javascript</small></span>
                     </div>
-                    <div class="d-flex justify-content-center align-items-center gap-2 mb-5">
+                    <div class="d-flex justify-content-center align-items-center gap-3 mb-2 mb-lg-5 ">
                         <a href="#" class="btn btn-demo w-50">
                             <i data-lucide="external-link" class="fs-5"></i>
                             <small>Démo</small>
@@ -168,7 +168,40 @@
                         <span class="badge rounded-pill bg-transparent badge-stacks"><small>Bootstrap</small></span>
                         <span class="badge rounded-pill bg-transparent badge-stacks"><small>Javascript</small></span>
                     </div>
-                    <div class="d-flex justify-content-center align-items-center gap-2 mb-5">
+                    <div class="d-flex justify-content-center align-items-center gap-3 mb-2 mb-lg-5">
+                        <a href="#" class="btn btn-demo w-50">
+                            <i data-lucide="external-link" class="fs-5"></i>
+                            <small>Démo</small>
+                        </a>
+                        <a href="#" class="btn btn-code w-50">
+                            <i data-lucide="github" class="fs-5"></i>
+                            <small>Code</small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Projet n°3 -->
+        <div class="col">
+            <!-- Card header - image -->
+            <div class="card rounded card-projet">
+                <div class="card-header p-0 border-0">
+                    <img src="assets/img/projet_mlsg.png"
+                         class="card-img-top"
+                         alt="Mission locale de Saint-Gilles projet"
+                         style="height:200px">
+                </div>
+                <!-- Card body - titre / description / stacks / boutons -->
+                <div class="card-body p-4 rounded-bottom">
+                    <h5 class="card-title text-white">Mission locale de Saint-Gilles</h5>
+                    <p class="card-text text-white opacity-50 small mb-3">Refonte du site web de la Mission Locale de Saint-Gilles, projet de formation</p>
+                    <div class="d-flex mb-4 gap-2">
+                        <span class="badge rounded-pill bg-transparent badge-stacks "><small>HTML</small></span>
+                        <span class="badge rounded-pill bg-transparent badge-stacks"><small>CSS</small></span>
+                        <span class="badge rounded-pill bg-transparent badge-stacks"><small>Bootstrap</small></span>
+                        <span class="badge rounded-pill bg-transparent badge-stacks"><small>jQuery</small></span>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center gap-3 mb-2 mb-lg-5">
                         <a href="#" class="btn btn-demo w-50">
                             <i data-lucide="external-link" class="fs-5"></i>
                             <small>Démo</small>
@@ -188,7 +221,7 @@
 </div>
 
 <!-- À propos -->
-<div class="container-fluid about py-5 px-5" id="about">
+<div class="container-fluid py-5 px-3 px-lg-5" id="about">
 
     <!-- Titre / Sous-titre -->
     <div class="text-center text-white mt-3 mb-5">
@@ -197,7 +230,7 @@
             spécialisé dans la création d’applications modernes et efficaces.</p>
     </div>
 
-    <div class="row g-5">
+    <div class="row g-2 g-lg-5">
         <!-- Profil -->
         <div class="col-sm-12 col-lg-6">
             <div class="card bg-transparent">
@@ -213,7 +246,7 @@
                         </div>
                     </div>
                     <!-- Colonne Texte -->
-                    <div class="text-white text-start">
+                    <div class="text-white text-center text-lg-start">
                         <p class="fs-4 fw-bold">Samuël Darry</p>
                         <p class="opacity-75">
                             Développeur fullstack passionné par les technologies modernes et l'innovation.
@@ -315,6 +348,72 @@
                     <span class="badge rounded-pill bg-transparent badge-stacks">Tailwind CSS</span>
                     <span class="badge rounded-pill bg-transparent badge-stacks">Vue.js</span>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Timeline -->
+<div class="container">
+
+    <!-- Titre / Sous-titre -->
+    <div class="text-center text-white mt-3 mb-5">
+        <h2 class="fw-bold mb-3">Mon <span class="gradient-nom">Parcours</span></h2>
+        <p class="opacity-50 fs-5">En formation Développeur Web Fullstack depuis novembre 2024, j’ai acquis des compétences
+            solides en frontend et backend à travers des projets pratiques et concrets.</p>
+    </div>
+
+    <div class="timeline text-white">
+
+        <!-- T1 -->
+        <div class="timeline-item left">
+            <div class="timeline-content rounded">
+                <h5>T1 : Nov 2024 – Jan 2025</h5>
+                <p class="text-primary">CF2M (Centre de formation 2 Mille)</p>
+                <ul class="opacity-75">
+                    <li>Début de la formation Fullstack</li>
+                    <li>Bases en <strong>HTML, CSS, JavaScript</strong></li>
+                    <li>Premiers projets pratiques</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- T2 -->
+        <div class="timeline-item right">
+            <div class="timeline-content rounded">
+                <h5>T2 : Fév – Avr 2025</h5>
+                <p class="text-primary">CF2M (Centre de formation 2 Mille)</p>
+                <ul class="opacity-75">
+                    <li>Approfondissement de <strong>JavaScript</strong> (DOM, ES6+)</li>
+                    <li>Découverte de <strong>React & Tailwind</strong></li>
+                    <li>Projets dynamiques et interactifs</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- T3 -->
+        <div class="timeline-item left">
+            <div class="timeline-content rounded">
+                <h5>T3 : Mai – Juil 2025</h5>
+                <p class="text-primary">CF2M (Centre de formation 2 Mille)</p>
+                <ul class="opacity-75">
+                    <li>Focus sur le <strong>backend</strong> (PHP, MySQL)</li>
+                    <li>Création d’<strong>API REST</strong></li>
+                    <li>Développement d’applications fullstack</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- T4 -->
+        <div class="timeline-item right">
+            <div class="timeline-content rounded">
+                <h5>T4 : Août – Déc 2025</h5>
+                <p class="text-primary">CF2M (Centre de formation 2 Mille)</p>
+                <ul class="opacity-75">
+                    <li>Projets complets front + back en équipe</li>
+                    <li>Utilisation de <strong>Git/GitHub</strong> & Agile</li>
+                    <li>Finalisation de la formation</li>
+                </ul>
             </div>
         </div>
     </div>
