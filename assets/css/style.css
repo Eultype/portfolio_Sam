@@ -680,3 +680,89 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ========================= FIN FOOTER ========================== */
+
+/* ========================= DEMO MODAL ========================== */
+#demoModal .modal-content {
+    background: var(--bg-dark, #0a1020);
+    color: #fff;
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 32px 0 rgba(14, 38, 74, 0.7);
+    border: 2px solid var(--primary-dark, #074d69);
+}
+
+#demoModal .modal-header {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+#demoModal .modal-body {
+    overflow: visible !important;
+    min-height: 350px;
+}
+
+#demoModal .modal-title {
+    color: var(--primary, #05b4e7);
+    letter-spacing: 1px;
+}
+
+#demoModal .btn-close {
+    filter: invert(1);
+    opacity: 0.7;
+}
+#demoModal .btn-close:hover {
+    opacity: 1;
+}
+
+#demoModal .tab-pane:not(.active) {
+    display: none !important;
+}
+#demoModal .tab-pane.active {
+    display: block !important;
+}
+
+
+#demoModal .nav-tabs {
+    border-bottom: 2px solid var(--primary, #05b4e7);
+}
+
+#demoModal .nav-link {
+    color: #fff !important;
+    font-weight: 600;
+    background: transparent !important;
+    border: none !important;
+    margin-right: 6px;
+    border-radius: 1.5rem 1.5rem 0 0 !important;
+    transition: background 0.3s, color 0.2s, border-radius 0.3s;
+    box-shadow: none !important;
+}
+
+#demoModal .nav-link.active,
+#demoModal .nav-link:focus,
+#demoModal .nav-link:active {
+    color: var(--bg-dark, #0a1020) !important;
+    background: var(--primary, #05b4e7) !important;
+    border: none !important;
+    border-radius: 1.5rem 1.5rem 0 0 !important;
+    box-shadow: none !important;
+}
+
+/* Suppression de l'outline/focus bleu natif */
+#demoModal .nav-link:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+#demoModal .nav-link:hover {
+    color: var(--primary, #05b4e7) !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+#demoModal .ratio {
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 2px solid var(--primary-dark, #074d69);
+    box-shadow: 0 4px 16px rgba(5,180,231,0.08);
+}
+
+/* ======================= DEMO MODAL FIN  ======================== */

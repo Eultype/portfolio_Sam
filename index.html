@@ -169,9 +169,9 @@
                         <span class="badge rounded-pill bg-transparent badge-stacks"><small>Javascript</small></span>
                     </div>
                     <div class="d-flex justify-content-center align-items-center gap-3 mb-2 mb-lg-5">
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-demo w-50">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-demo w-50" data-bs-toggle="modal" data-bs-target="#demoModal">
                             <i data-lucide="external-link" class="fs-5"></i>
-                            <small>Visiter</small>
+                            <small>Démo</small>
                         </a>
                         <a href="https://github.com/Eultype/cooklanders" target="_blank" rel="noopener noreferrer" class="btn btn-code w-50">
                             <i data-lucide="github" class="fs-5"></i>
@@ -598,6 +598,64 @@
         <p class="text-center text-secondary mb-0"><small>&copy; 2025 Samuël Darry. Tous droits réservés.</small></p>
     </div>
 </footer>
+
+<!-- Modal Demo Cooklanders -->
+<div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark text-white">
+            <div class="modal-header border-0">
+                <h5 class="modal-title" id="demoModalLabel">Démo Cooklanders</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Onglets pour Desktop, Tablette, Mobile -->
+                <ul class="nav nav-tabs mb-3 justify-content-center" id="videoTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="desktop-tab" data-bs-toggle="tab" data-bs-target="#desktop-video" type="button" role="tab" aria-controls="desktop-video" aria-selected="true">
+                            Desktop
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tablet-tab" data-bs-toggle="tab" data-bs-target="#tablet-video" type="button" role="tab" aria-controls="tablet-video" aria-selected="false">
+                            Tablette
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="mobile-tab" data-bs-toggle="tab" data-bs-target="#mobile-video" type="button" role="tab" aria-controls="mobile-video" aria-selected="false">
+                            Mobile
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="desktop-video" role="tabpanel" aria-labelledby="desktop-tab">
+                        <div class="ratio ratio-16x9 mb-3">
+                            <video controls poster="assets/img/projet_cooklanders.png">
+                                <source src="assets/video/video_cooklanders_desktop.mov" type="video/mp4">
+                                Votre navigateur ne supporte pas la lecture vidéo.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tablet-video" role="tabpanel" aria-labelledby="tablet-tab">
+                        <div class="ratio ratio-16x9 mb-3">
+                            <video controls poster="assets/img/projet_cooklanders_tablette.png">
+                                <source src="assets/video/video_cooklanders_tablette.mov" type="video/mp4">
+                                Votre navigateur ne supporte pas la lecture vidéo.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="mobile-video" role="tabpanel" aria-labelledby="mobile-tab">
+                        <div class="ratio ratio-16x9 mb-3">
+                            <video controls poster="assets/img/projet_cooklanders-mobile.png">
+                                <source src="assets/video/video_cooklanders_mobile.mov" type="video/mp4">
+                                Votre navigateur ne supporte pas la lecture vidéo.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <!-- Bootstrap JS -->
