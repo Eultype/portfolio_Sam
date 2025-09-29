@@ -293,7 +293,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Carte projet */
 .card-projet {
     background-color: hsl(217.2 32.6% 17.5%);
-    border: 1.5px solid var(--primary-dark); !important;
+    border: 1.5px solid var(--primary-dark) !important;
     border-radius: 0;
     transition: all 0.3s ease-in-out;
 }
@@ -388,7 +388,6 @@ h1, h2, h3, h4, h5, h6 {
 /* =========================== ABOUT ============================= */
 /* Image profile */
 .img-profil {
-    opacity: 0.7;
     border-radius: 0.4rem;
 }
 
@@ -618,6 +617,20 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1.10);
     color: var(--primary) !important;
 }
+
+.bg-icon-social:hover svg,
+.bg-icon-social:hover rect {
+    /* Pour s'assurer que le SVG change bien de couleur comme les autres icônes */
+    stroke: var(--primary) !important;
+    fill: var(--primary) !important;
+    transition: fill 0.5s, stroke 0.5s; /* animation douce */
+}
+
+.bg-icon-social:hover text {
+    stroke: white;
+    fill: white;
+}
+
 
 .dispo-pulse {
     width:12px;
